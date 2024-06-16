@@ -1,0 +1,45 @@
+/* src/components/homepage.css */
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  .section {
+    padding: 20px;
+  }
+  
+  .rotate-360 {
+    transform: rotate(180deg);
+  }
+
+  /* styles.css */
+
+.diagonal-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    background-color: #EEEBD8; /* Adjust the color as needed */
+    transform: scaleY(-5deg); /* Create the diagonal effect */
+    transform-origin: top ;
+    z-index: 1; /* Ensure it appears above other elements */
+}
+
+.diagonal-box1::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    background-color: #B8D8C9; /* Adjust the color as needed */
+    transform: scaleY()(-5deg); /* Create the diagonal effect */
+    transform-origin: bottom right;
+    z-index: 1; /* Ensure it appears above other elements */
+}
+
+.fade {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+

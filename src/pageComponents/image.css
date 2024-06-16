@@ -1,0 +1,41 @@
+/* image.css */
+
+/* Custom styles for the carousel component */
+.carousel .slide img {
+    height: 400px; /* Fixed height for portrait orientation */
+    width: auto; /* Automatically adjust the width to maintain the aspect ratio */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    display: block; /* Ensure the image behaves as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.carousel .legend {
+    background: rgba(100, 228, 143, 0.5); /* Semi-transparent background for text */
+    color: white; /* White text for contrast */
+    font-size: 1rem; /* Adjust font size as needed */
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.carousel .control-arrow, .carousel .control-next.control-arrow, .carousel .control-prev.control-arrow {
+    opacity: 0.7; /* Slightly transparent controls */
+    transition: opacity 0.25s;
+}
+
+.carousel .control-arrow:hover {
+    opacity: 1; /* Fully opaque on hover */
+}
+
+.carousel .control-dots .dot {
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for dots */
+    width: 10px;
+    height: 10px; /* Ensuring the dots are circular */
+}
+
+.carousel .control-dots .dot.selected {
+    background: white; /* White background for selected dot */
+}
